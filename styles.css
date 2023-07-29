@@ -26,6 +26,10 @@ body {
     margin: 0;
 }
 
+.hide {
+    display: none;
+}
+
 #website {
     display: grid;
     justify-content: center;
@@ -46,7 +50,6 @@ body {
 }
 
 .thank-you-state {
-    display: none;
     text-align: center;
 }
 
@@ -114,10 +117,18 @@ body {
 }
 
 .selected-rating-wrapper {
-    display: inline-block;
     color: var(--clr-primary-orange);
-    background-color: var(--clr-neutral-medium-grey);
+    background-color: var(--clr-neutral-medium-grey-bg);
+    width: fit-content;
+    margin: 1.5em auto;
+    padding: 0.4em 0.8em;
+    border-radius: 50px;
 }
+
+.selected-rating-wrapper p {
+    margin: 0.2em 0 0; /*What causes the text to stick to the top of <p>?*/
+}
+
 
 @media (min-width: 1440px) {
     .interactive-rating-component {
