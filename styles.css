@@ -39,7 +39,7 @@ body {
 }
 
 .interactive-rating-component {
-    background-color: var(--clr-neutral-dark-blue);
+    background: linear-gradient(to bottom right, var(--clr-neutral-dark-blue), var(--clr-neutral-medium-grey-bg));
     max-width: 375px;
     border-radius: 25px;
     margin-bottom: 1em;
@@ -66,13 +66,18 @@ body {
 .title {
     font-size: var(--fs-title);
     color: var(--clr-neutral-white);
+    font-weight: var(--fw-bold);
     margin-bottom: 0.3em;
+}
+
+.text {
+    line-height: 1.5rem;
 }
 
 .rating-score-wrapper {
     display: flex;
-    justify-content: space-around;
-    margin: 1.6em 0em 1.2em;
+    justify-content: space-between;
+    margin: 1.6em 0em;
 }
 
 .rating-score {
